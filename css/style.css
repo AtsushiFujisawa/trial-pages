@@ -5,9 +5,12 @@
   background: url("../image/strawberries.jpg") no-repeat fixed left bottom;
   padding: 15rem 1rem;
   text-align: center;
-  background-clip: text; }
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; }
   .header .title {
-    display: inline-block;
     color: transparent;
     font-size: 20rem;
     font-family: 'Pacifico', cursive;
