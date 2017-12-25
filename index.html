@@ -3,16 +3,94 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sample</title>
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron"> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico"> 
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header>
-		<h1>Hello World!!</h1>
+	<header class="header">
+		<h1 class="title">AI</h1>
+		<div class="ripple"></div>
 	</header>
 	<main>
-		
+		<article class="color-thema">
+			<h1>thema</h1>
+			<div class="carousel">
+				<a class="carousel-item pink" href="#furirin">
+					<img src="image/thema-icon/ruby.png" alt="ruby" />
+				</a>
+				<a class="carousel-item pink lighten-4" href="#rikyako">
+					<img src="image/thema-icon/riko.png" alt="riko" />
+				</a>
+				<a class="carousel-item light-blue" href="#shukashu">
+					<img src="image/thema-icon/you.png" alt="you" />
+				</a>
+				<a class="carousel-item amber" href="#anchan">
+					<img src="image/thema-icon/chika.png" alt="chika" />
+				</a>
+				<a class="carousel-item red" href="#arisha">
+					<img src="image/thema-icon/dia.png" alt="dia" />
+				</a>
+				<a class="carousel-item grey" href="#aikyan">
+					<img src="image/thema-icon/yoshiko.png" alt="yoshiko" />
+				</a>
+				<a class="carousel-item yellow" href="#kinchan">
+					<img src="image/thema-icon/hanamaru.png" alt="hanamaru" />
+				</a>
+				<a class="carousel-item purple" href="#ainya">
+					<img src="image/thema-icon/mari.png" alt="mari" />
+				</a>
+				<a class="carousel-item teal" href="#suwawa">
+					<img src="image/thema-icon/kanan.png" alt="kanan" />
+				</a>
+			</div>
+		</article>
+		<article class="architecture-list">
+			<h1>architecture</h1>
+			<div class="grid">
+				<div id="html" class="grid-image"></div>
+			</div>
+			<div class="grid">
+				<div id="css" class="grid-image"></div>
+			</div>
+			<div class="grid">
+				<div id="js" class="grid-image"></div>
+			</div>
+			<div class="grid">
+				<div id="nodesass" class="grid-image"></div>
+			</div>
+			<div class="grid">
+				<div id="materialize" class="grid-image"></div>
+			</div>
+			<div class="grid">
+				<div id="jquery" class="grid-image"></div>
+			</div>
+			<a class="grid" href="/react-vr">
+				<div id="react" class="grid-image"></div>
+			</a>
+			<div class="grid">
+				<div id="angular" class="grid-image"></div>
+			</div>
+			<div class="grid">
+				<div id="vue" class="grid-image"></div>
+			</div>
+			<div class="grid">
+				<div id="createjs" class="grid-image"></div>
+			</div>
+		</article>
 	</main>
 	<footer>
 		
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.carousel').carousel();
+		});
+	</script>
 </body>
 </html>

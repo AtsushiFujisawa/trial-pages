@@ -1,0 +1,134 @@
+@charset "utf-8";
+* {
+	vertical-align: middle;
+}
+.header {
+	background: url("../image/strawberries.jpg") no-repeat fixed left bottom;
+	padding: 15rem 1rem;
+	text-align: center;
+	background-clip: text;
+	.title {
+		display: inline-block;
+		color: transparent;
+		font-size: 20rem;
+		font-family: 'Pacifico', cursive;
+		font-weight: bolder;
+	}
+	.ripple {
+		height: 500px;
+		width: 500px;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		background-color: white;
+		border-radius: 100%;
+		transform: translate(-250px, -250px) scale(0);
+		opacity: 0;
+		animation: ripple 0.75s ease-out infinite;
+		z-index: -1;
+	}
+}
+@keyframes ripple {
+	from {
+		opacity: 1;
+	}
+	to {
+		transform: translate(-250px, -250px) scale(2);
+		background-color: pink;
+		opacity: 0;
+	}
+}
+.color-thema {
+	padding: 2rem 0;
+	background-color: #fff;
+	h1 {
+		margin: 0;
+		text-align: center;
+		font-family: 'Orbitron', sans-serif;
+	}
+	.carousel-item {
+		width: 240px;
+		height: 240px;
+		padding: 2rem;
+		border-radius: 50%;
+	}
+}
+.architecture-list {
+	padding: 2rem 0;
+	background-color: #fff;
+	text-align: center;
+	h1 {
+		margin: 0;
+		font-family: 'Orbitron', sans-serif;
+	}
+	.grid {
+		display: inline-block;
+		width: 240px;
+		height: 240px;
+		padding: 1rem;
+		margin: 1rem;
+		box-shadow: 0 0 2px rgba(0,0,0,.3);
+		border-radius: 3px;
+		transition: all 300ms 0s ease;
+		cursor: pointer;
+		.grid-image {
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+		}
+		&:hover {
+			margin: 0 1rem 1rem 0;
+			box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+		}
+	}
+	.image-propaty {
+		background-position: center center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#html {
+		background-image: url('../image/architecture/html.svg');
+		@extend .image-propaty;
+	}
+	#css {
+		background-image: url('../image/architecture/css.svg');
+		@extend .image-propaty;
+	}
+	#js {
+		background-image: url('../image/architecture/javascript.svg');
+		@extend .image-propaty;
+	}
+	#nodesass {
+		background-image: url('../image/architecture/node-sass.svg');
+		@extend .image-propaty;
+	}
+	#materialize {
+		background-image: url('../image/architecture/materialize.svg');
+		@extend .image-propaty;
+	}
+	#jquery {
+		background-image: url('../image/architecture/jquery.svg');
+		@extend .image-propaty;
+	}
+	#react {
+		background-image: url('../image/architecture/react.svg');
+		@extend .image-propaty;
+	}
+	#angular {
+		background-image: url('../image/architecture/angular.svg');
+		@extend .image-propaty;
+	}
+	#vue {
+		background-image: url('../image/architecture/vue.svg');
+		@extend .image-propaty;
+	}
+	#createjs {
+		background-image: url('../image/architecture/createjs.svg');
+		@extend .image-propaty;
+	}
+	&::after {
+		display: block;
+		content: '';
+		clear: both;
+	}
+}
